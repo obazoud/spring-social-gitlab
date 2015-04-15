@@ -51,5 +51,6 @@ public interface ProjectOperations {
     public List<ProjectBranch> getProjectBranches(long projectId);
     
     public ProjectBranch getProjectBranch(long projectId, String branchName);
-    
+
+    List<ProjectTree> getProjecTree(long projectId, String path, String refName);
 }

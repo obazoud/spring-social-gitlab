@@ -48,6 +48,7 @@ public class ProjectTest extends AbstractGitlabApiTest {
         List<Project> projects = gitlab.projectOperations().getProjectsAccessibleByCurrentUser();
 
         assertThat(projects, hasSize(2));
+        assertThat(projects.get(0).getId(), is(4L));
     }
 
     @Test
